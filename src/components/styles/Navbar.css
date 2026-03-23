@@ -81,3 +81,32 @@
     font-size: 18px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(10, 14, 23, 0.85);
+    backdrop-filter: blur(8px);
+    margin-bottom: 0px;
+  }
+  .header ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header ul li:last-child {
+    background-color: rgba(20, 184, 166, 0.15);
+    border: 1px solid #14b8a6;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #14b8a6;
+    transition: all 0.3s;
+  }
+  .header ul li:last-child:active {
+    background-color: #14b8a6;
+    color: #000;
+  }
+}

@@ -114,3 +114,41 @@ a.contact-social {
     width: calc(100% - 25px);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .contact-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .contact-section h3 {
+    font-size: 32px;
+  }
+  .contact-box h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  a.contact-social {
+    font-size: 18px;
+    padding: 12px 15px;
+    margin-top: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #14b8a6;
+    border: 1px solid #14b8a6;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s background;
+  }
+  a.contact-social:active {
+    background: #14b8a6;
+    color: #000;
+  }
+  .contact-section {
+    padding-bottom: 40px;
+    margin-top: 40px;
+  }
+}

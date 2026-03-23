@@ -287,10 +287,10 @@
   .whatIDO {
     height: auto;
     padding: 50px 0px;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
   }
   .what-box-in {
-    height: 500px;
+    height: 600px;
     margin-left: -50px;
   }
   .what-content {
@@ -326,7 +326,7 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: 600px;
   }
   .what-box {
     width: 500px;
@@ -338,7 +338,7 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: 550px;
   }
   .what-content h5,
   .what-content-flex {
@@ -355,14 +355,16 @@
     padding: 30px;
   }
   .what-content p {
-    font-size: 11px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .what-noTouch:hover,
   .what-content-active {
     padding: 10px 30px;
   }
   .what-tags {
-    font-size: 11px;
+    font-size: 13px;
+    padding: 4px 10px;
   }
 
   .what-noTouch:hover ~ .what-content,
@@ -381,8 +383,15 @@
     justify-content: left;
   }
   .what-box {
-    max-width: calc(100% - 25px);
+    max-width: 100%;
+    width: 100%;
     margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .what-box-in {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media only screen and (min-width: 1950px) {
