@@ -1,0 +1,39 @@
+.mobile-only-footer {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding-bottom: 60px; /* avoid overlap */
+  }
+
+  .mobile-only-footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(234, 229, 236, 0.85); /* Clean text color from theme */
+    border-top: 1px solid rgba(255, 255, 255, 0.08); /* faint top separator */
+    background: rgba(10, 14, 23, 0.75); /* Theme background with opacity */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    z-index: 9999;
+  }
+
+  .mobile-footer-content {
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+  }
+
+  .mobile-only-footer .highlight-freelance {
+    color: var(--accentColor, #5eead4);
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(94, 234, 212, 0.4); /* Subtle glow */
+  }
+}

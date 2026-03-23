@@ -9,6 +9,7 @@ import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
 import setSplitText from "./utils/splitText";
+import MobileFooter from "./MobileFooter";
 
 const TechStack = lazy(() => import("./TechStack"));
 
@@ -52,6 +53,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
           </div>
         </div>
       </div>
+      <MobileFooter />
     </div>
   );
 };
