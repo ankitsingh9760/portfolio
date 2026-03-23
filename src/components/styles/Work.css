@@ -283,6 +283,8 @@
 
   .carousel-image-wrapper {
     width: 100%;
+    padding-right: 0;
+    box-sizing: border-box;
   }
 
   .carousel-arrow {
