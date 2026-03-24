@@ -39,6 +39,37 @@
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.navbar-connect:hover {
+  color: #14b8a6;
+}
+
+.available-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #14b8a6;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #14b8a6, 0 0 16px #14b8a6;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 4px #14b8a6, 0 0 8px #14b8a6;
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 10px #14b8a6, 0 0 20px #14b8a6, 0 0 30px #14b8a6;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 4px #14b8a6, 0 0 8px #14b8a6;
+    opacity: 0.8;
+  }
 }
 .navbar-title {
   font-weight: 700;
@@ -63,7 +94,9 @@
 }
 @media only screen and (min-width: 900px) {
   .navbar-connect {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 }
 @media only screen and (min-width: 1200px) {

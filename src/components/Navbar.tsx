@@ -50,7 +50,7 @@ const Navbar = () => {
           className="navbar-connect"
           data-cursor="disable"
         >
-          ankit.pathani47@gmail.com
+          <span className="available-dot"></span> Available for Freelance
         </a>
         <ul>
           <li>
